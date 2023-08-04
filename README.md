@@ -1,3 +1,4 @@
 # myproject
 fetchRecordings(): This function makes an HTTP GET request to http://localhost:3000/RECORDINGS/ to retrieve a list of class recordings. It returns the response data as a JSON object.
 deleteVideo(videoId): This function makes an HTTP DELETE request to http://localhost:3000/RECORDINGS/${videoId} to delete a class recording with the given videoId. It handles any errors that might occur during the deletion process.
+addNewVideo(videoData): This function makes an HTTP POST request to http://localhost:3000/RECORDINGS/ to add a new class recording. The videoData parameter is expected to contain properties like title, date, time, description, and VideoLink. It handles any errors that might occur during the addition process.
