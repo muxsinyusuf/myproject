@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recorded Classes</title>
+   <link rel="stylesheet" href="me.css">
+</head>
+
+<body>
+
+    <h1>Moringa  <span> School Recorded </span>Sessions </h1>
+    
+    <ul id="recordings-list">
+        <!-- Recorded classes will be dynamically added here -->
+    </ul>
+    <form id="new-video-form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" required><br>
+
+        <label for="date">Date:</label>
+        <input type="text" id="date" required><br>
+
+        <label for="time">Time:</label>
+        <input type="text" id="time" required><br>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" required><br>
+
+        <label for="video-link">Video Link:</label>
+        <input type="text" id="video-link" required><br>
+
+        <button type="submit">Add Video</button>
+    </form>
+
+    <ul id="recordings-list">
+        <!-- Recorded classes will be dynamically added here -->
+    </ul>
+<!-- ... Your existing HTML form ... -->
+
+<!-- Update video form -->
+<form id="update-video-form">
+    <input type="hidden" id="video-id" value=""> <!-- Hidden input field to store the video ID -->
+    <!-- ... Your existing form inputs for updating video details ... -->
+    <button type="submit">Update Video</button>
+</form>
+
+<!-- ... Your existing HTML ... -->
+
+
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
