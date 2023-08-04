@@ -10,3 +10,19 @@ handleUpdateVideo(event, videoId): This function is called when the update video
 newVideoForm Event Listener: An event listener is added to the new video submission form to call handleFormSubmit() when the form is submitted.
 
 Initial Display: The script starts by calling displayRecordings() to initially show the list of recordings without any search filters.
+
+
+# How to use 
+To use this web application, you'll need to have a local server running at http://localhost:3000 that handles API requests for class recordings. The API endpoints should be set up to support GET, POST, PUT, and DELETE methods for managing recordings.
+
+The web application provides a form to add new class recordings. When you submit the form, the recording is added to the API, and the list of recordings is updated accordingly. Each recording is displayed with its title, description, date, time, and a link to watch the video. There is also a "Delete" button for each recording that allows you to remove the recording from the API and update the displayed list.
+
+Additionally, the application supports updating existing recordings. When you click the "Update" button for a specific recording, a form will appear where you can enter the updated details for that recording. Upon submission, the video is updated in the API, and the displayed list is refreshed to reflect the changes.
+
+Make sure to include the necessary HTML elements for the form and the list of recordings in your web page, and ensure that the script is properly loaded. The displayRecordings() function will handle displaying the recordings on the page.
+
+Please note that this code assumes you have already set up a backend server and API to handle the data operations for class recordings. If you haven't done that, this code won't work as expected. Also, consider implementing security measures like authentication and authorization for the API if the application is meant for production use.
+
+
+
+
